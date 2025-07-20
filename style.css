@@ -657,3 +657,44 @@ img {
   color: var(--text-color);
   text-align: justify;
 }
+
+.Hii span {
+  font-size: 2rem;
+  color: var(--secondary-color);
+  margin: 3rem;
+}
+
+.IG {
+  max-width: 800px;
+  height: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.IG span {
+  text-align: center;
+  font-size: large;
+  justify-content: center;
+}
+
+.IG-box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem; /* optional spacing between items */
+  justify-content: space-between;
+}
+
+.IG-item {
+  flex: 1 1 calc(25% - 1rem); /* 4 items per row */
+  box-sizing: border-box;
+}
+
+.IG-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px; /* optional styling */
+}
