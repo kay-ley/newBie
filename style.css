@@ -665,13 +665,12 @@ img {
 }
 
 .IG {
-  max-width: 800px;
   height: 600px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
+  justify-content: center;
+  align-items: center;
 }
 
 .IG span {
@@ -683,6 +682,7 @@ img {
 .IG-box {
   display: flex;
   flex-wrap: wrap;
+  margin: 3rem 0;
   gap: 1rem; /* optional spacing between items */
   justify-content: space-between;
 }
@@ -696,5 +696,24 @@ img {
   width: 100%;
   height: auto;
   display: block;
-  border-radius: 8px; /* optional styling */
+}
+
+.thrive-1 {
+  display: flex;
+  justify-content: space-around;
+  width: auto;
+}
+
+.thrive {
+  display: flex;
+  text-align: left;
+}
+.btttn {
+  display: inline-block;
+  padding: 1rem 7.8rem;
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: var(--text-color);
+  background: transparent;
+  border: 1px solid var(--secondary-color);
 }
