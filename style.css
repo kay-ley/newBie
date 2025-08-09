@@ -602,11 +602,6 @@ ul li a:hover {
   font-style: italic;
 }
 
-/* .read p:nth-child(1) {
-  font-size: 9rem;
-  margin: 1.5rem 0.6rem;
-} */
-
 .read p:first-of-type {
   font-size: 18px;
   line-height: 1.7;
@@ -621,8 +616,7 @@ ul li a:hover {
 .Hi {
   display: flex;
   justify-content: space-between;
-  flex-direction: row; /* Horizontally centers both 
-  gap: 20px; /* Space between image and text */
+  flex-direction: row;
   padding: 4rem 0; /* Padding around the section */
 }
 
@@ -724,16 +718,6 @@ img {
   color: var(--text-color);
   text-align: justify;
 }
-
-/* .btttn {
-  display: inline-block;
-  padding: 0.7rem 7.8rem;
-  font-size: 1.6rem;
-  font-weight: 500;
-  color: var(--text-color);
-  background: transparent;
-  border: 1px solid var(--secondary-color);
-} */
 
 form {
   display: flex;
@@ -991,5 +975,201 @@ nav {
   .prof-2 a {
     font-size: 1.6rem; /* smaller link size */
     padding: 8px 0;
+  }
+}
+
+/* 📱 Mobile styles */
+@media (max-width: 600px) {
+  .blogsite {
+    padding: 1.5rem;
+  }
+
+  .blogsite p:nth-child(1),
+  .blogsite span {
+    font-size: 2.5rem; /* Smaller heading */
+    margin-top: 4rem;
+  }
+
+  .blogset {
+    flex-direction: column; /* Stack vertically */
+    gap: 1.5rem;
+    margin-top: 4rem;
+  }
+
+  .set-1 {
+    padding: 2rem; /* Reduce box padding */
+  }
+
+  .set-1 p:nth-child(2) {
+    font-size: 1.8rem;
+  }
+
+  .set-1 p:nth-child(3) {
+    font-size: 1.4rem;
+  }
+
+  /* Adjust icon circle positioning */
+  .set-1a,
+  .set-1b,
+  .set-1c,
+  .set-1d {
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 100%;
+  }
+
+  .bblog {
+    font-size: 1.4rem;
+    padding: 0.8rem 1.6rem;
+  }
+}
+
+/* 📱 Mobile styles for phones */
+@media (max-width: 600px) {
+  .profile-1 {
+    padding: 2rem 1rem; /* Less padding on mobile */
+  }
+
+  .prof-a {
+    font-size: 2.2rem; /* Smaller heading */
+    text-align: center;
+  }
+
+  .prof-a span {
+    font-size: 2.2rem; /* Match heading size */
+  }
+
+  .prof-1a {
+    flex-direction: column; /* Stack cards vertically */
+    align-items: center;
+    gap: 1.5rem; /* Smaller gap between cards */
+  }
+
+  .prof-2a {
+    flex: 1 1 100%; /* Full width for each card */
+    max-width: 100%;
+    padding: 1rem;
+  }
+
+  .prof-2a img {
+    width: 100%;
+    height: auto;
+  }
+
+  .prof-2a a {
+    font-size: 1.6rem; /* Slightly smaller link text */
+  }
+
+  .prof-2a h2 {
+    font-size: 1.6rem; /* Smaller heading */
+  }
+
+  .prof-2a p {
+    font-size: 1.2rem; /* Smaller description */
+  }
+}
+
+/* 📱 Mobile styles */
+@media (max-width: 600px) {
+  .reader {
+    padding: 2rem 1rem; /* Add side padding for smaller screens */
+    min-height: auto; /* Allow height to adjust naturally */
+  }
+
+  .read i {
+    font-size: 3rem; /* Smaller quote icon */
+  }
+
+  .read h1 {
+    font-size: 2.5rem; /* Reduce heading size */
+  }
+
+  .read span {
+    font-size: 2.5rem; /* Match heading size */
+  }
+
+  .read p:first-of-type {
+    font-size: 1.4rem; /* Smaller paragraph text */
+    line-height: 1.6;
+  }
+
+  .read p:last-of-type {
+    font-size: 1.2rem; /* Smaller name text */
+  }
+} /* 📱 Mobile Styles */
+@media (max-width: 600px) {
+  .Hi {
+    flex-direction: column; /* Stack image and text */
+    padding: 2rem 1rem; /* Reduce padding for small screens */
+  }
+
+  .Hipic {
+    flex-basis: 100%;
+    width: 50%;
+    margin-left: 25%;
+    height: auto;
+  }
+
+  .Hii {
+    flex-basis: 100%;
+    font-size: 1.4rem; /* Slightly smaller text */
+  }
+
+  .Hii h1 {
+    font-size: 3rem; /* Reduce heading size */
+    margin: 2rem 0 1rem;
+    text-align: center;
+  }
+
+  .Hii p {
+    margin: 1rem 0;
+    text-align: left; /* More natural reading on phones */
+  }
+
+  .Hii span {
+    display: block;
+    text-align: center;
+    margin: 2rem 0 0;
+    font-size: 1.6rem;
+  }
+}
+
+/* 📱 Mobile Styles */
+@media (max-width: 600px) {
+  .IG-box {
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+  }
+
+  .IG-item {
+    flex: 1 1 calc(50% - 1rem); /* 2 images per row */
+    max-width: calc(50% - 1rem);
+  }
+
+  .thrive-1 {
+    flex-direction: column; /* Stack heading/text above form */
+    align-items: center;
+    text-align: center;
+    gap: 4rem;
+  }
+
+  .thrive h1 {
+    font-size: 2.8rem; /* Smaller heading */
+    line-height: 1.3;
+    bottom: 20px;
+  }
+
+  .thrive p {
+    font-size: 1.4rem; /* Smaller paragraph */
+    text-align: center;
+    bottom: 20px;
+  }
+
+  .triv input[type="email"],
+  .btttn {
+    max-width: 100%; /* Full width on phones */
+    font-size: 1.6rem;
+    padding: 10px 20px;
   }
 }
